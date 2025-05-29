@@ -11,6 +11,10 @@ namespace FundamentosMVC.Models
         [Display(Name = "Nome do Cliente")]
 
         public string ? Nome { get; set; }
+
+        [Display(Name = "Email do Cliente")]
+
+        [EmailAddress(ErrorMessage = "Endereço de email invalido")]
         public string ? Email { get; set; }
     }
 }
